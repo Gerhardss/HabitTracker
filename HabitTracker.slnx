@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="HabitTracker.Api/HabitTracker.Api.csproj" Id="204ea384-d8bf-4e82-adc6-3ee351a2edcd" />
+  <Project Path="HabitTracker.ConsoleApp/HabitTracker.ConsoleApp.csproj" Id="2b6e0897-e13a-4cbe-8b9d-670bb76e7926" />
+  <Project Path="HabitTracker.Domain/HabitTracker.Domain.csproj" Id="a01a8635-7ec9-4af7-b922-9789d938a56d" />
+  <Project Path="HabitTracker.Mobile/HabitTracker.Mobile.csproj" Id="5864f1ed-a90d-4004-a3c1-47691676a10e" />
+  <Project Path="HabitTracker.Shared/HabitTracker.Shared.csproj" Id="23ab8b5f-4677-4bf0-a7fa-dad5e78d5c96" />
+</Solution>

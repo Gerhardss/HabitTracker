@@ -1,0 +1,15 @@
+<api>
+  <jcw-types>
+    <type name="MainActivity" package="crc647369b8ccb21cbefb" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiAppCompatActivity" partial_assembly_qualified_name="HabitTracker.Mobile.MainActivity, HabitTracker.Mobile">
+      <constructors>
+        <constructor name="MainActivity" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="MainActivity" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </constructors>
+    </type>
+    <type name="MainApplication" package="crc647369b8ccb21cbefb" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiApplication" is_application="True" partial_assembly_qualified_name="HabitTracker.Mobile.MainApplication, HabitTracker.Mobile" application_constructor="MainApplication" />
+  </jcw-types>
+  <acw-types partial-assembly-name="HabitTracker.Mobile" module-name="HabitTracker.Mobile.dll">
+    <type assembly-qualified-name="HabitTracker.Mobile.MainActivity, HabitTracker.Mobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="habittracker.mobile.MainActivity" java-key="crc647369b8ccb21cbefb.MainActivity" managed-key="HabitTracker.Mobile.MainActivity" partial-assembly-qualified-name="HabitTracker.Mobile.MainActivity, HabitTracker.Mobile" />
+    <type assembly-qualified-name="HabitTracker.Mobile.MainApplication, HabitTracker.Mobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="habittracker.mobile.MainApplication" java-key="crc647369b8ccb21cbefb.MainApplication" managed-key="HabitTracker.Mobile.MainApplication" partial-assembly-qualified-name="HabitTracker.Mobile.MainApplication, HabitTracker.Mobile" />
+  </acw-types>
+</api>

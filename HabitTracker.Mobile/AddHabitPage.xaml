@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HabitTracker.Mobile.AddHabitPage"
+             Title="Jauns ieradums">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label Text="Pievienot ieradumu" FontSize="24" FontAttributes="Bold" />
+
+        <Label Text="Nosaukums:" />
+        <Entry x:Name="NameEntry" Placeholder="Ievadi nosaukumu" />
+
+        <Label Text="Apraksts:" />
+        <Entry x:Name="DescriptionEntry" Placeholder="Ievadi aprakstu" />
+
+        <Label Text="Cik bieži jāizpilda:" Margin="0,10,0,0" />
+        <Picker x:Name="SchedulePicker" Title="Izvēlies biežumu:">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Katru dienu</x:String>
+                    <x:String>Darbadienas (P-P)</x:String>
+                    <x:String>3x nedela</x:String>
+                    <x:String>1x nedela</x:String>
+                    <x:String>Pec vajadzibas</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <!-- Kludu vizualizacija -->
+        <Label x:Name="ErrorLabel" TextColor="Red" IsVisible="False" FontAttributes="Bold" />
+
+        <Button Text="Saglabāt" Clicked="OnSaveClicked" BackgroundColor="#3b82f6" TextColor="White" CornerRadius="5" />
+        <Button Text="Atcelt" Clicked="OnCancelClicked" BackgroundColor="Transparent" TextColor="#4b5563" />
+    </VerticalStackLayout>
+</ContentPage>

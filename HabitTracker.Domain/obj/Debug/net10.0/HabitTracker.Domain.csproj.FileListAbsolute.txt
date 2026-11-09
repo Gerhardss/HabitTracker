@@ -1,0 +1,12 @@
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Domain\bin\Debug\net10.0\HabitTracker.Domain.deps.json
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Domain\bin\Debug\net10.0\HabitTracker.Domain.dll
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Domain\bin\Debug\net10.0\HabitTracker.Domain.pdb
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Domain\obj\Debug\net10.0\HabitTracker.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Domain\obj\Debug\net10.0\HabitTracker.Domain.AssemblyInfoInputs.cache
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Domain\obj\Debug\net10.0\HabitTracker.Domain.AssemblyInfo.cs
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Domain\obj\Debug\net10.0\HabitTracker.Domain.csproj.CoreCompileInputs.cache
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Domain\obj\Debug\net10.0\HabitTracker.Domain.dll
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Domain\obj\Debug\net10.0\refint\HabitTracker.Domain.dll
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Domain\obj\Debug\net10.0\HabitTracker.Domain.pdb
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Domain\obj\Debug\net10.0\ref\HabitTracker.Domain.dll
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Domain\obj\Debug\net10.0\HabitTra.35005AA2.Up2Date

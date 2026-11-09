@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HabitTracker.Mobile.MainPage"
+             Title="Mani ieradumi:">
+
+    <!-- Grid dabuju no gemini, man sakuma bija verticalstacklayout, bet nevareja paiet uz leju, mi ieteica izmantot grid -->
+    <Grid Padding="20" RowDefinitions="Auto, Auto, *">
+
+        <Button Grid.Row="0" 
+                Text="+ Pievienot jaunu ieradumu" 
+                Clicked="OnAddNewClicked" 
+                BackgroundColor="#3b82f6" 
+                TextColor="White" 
+                CornerRadius="5"
+                Margin="0,0,0,15" />
+
+        <Label Grid.Row="1" 
+               Text="Aktīvie ieradumi" 
+               FontSize="24" 
+               FontAttributes="Bold" 
+               Margin="0,0,0,15" />
+
+        <CollectionView Grid.Row="2" 
+                        x:Name="HabitsList" 
+                        SelectionMode="Single" 
+                        SelectionChanged="OnHabitSelected">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <!-- pievieno datus -->
+                    <Frame Margin="0,0,0,10" Padding="15" CornerRadius="8" BackgroundColor="#f3f4f6" HasShadow="False">
+                        <Frame.GestureRecognizers> 
+                            <TapGestureRecognizer Tapped="OnHabitTapped" />
+                        </Frame.GestureRecognizers>
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Name}" FontSize="18" FontAttributes="Bold" TextColor="#1f2937" />
+                            <Label Text="{Binding Description}" FontSize="14" TextColor="#4b5563" Margin="0,5,0,0" />
+                            <Label Text="{Binding Schedule, StringFormat='Biežums: {0}'}" FontSize="14" TextColor="#2563eb" Margin="0,5,0,0" />
+                            
+                            <Button CommandParameter="{Binding .}" 
+                                    Clicked="OnCompleteButtonClicked" 
+                                    Margin="0,10,0,0" 
+                                    CornerRadius="5">
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <!-- nav izpildits krasa -->
+                                        <Setter Property="Text" Value="Izpildīt šodien!" />
+                                        <Setter Property="BackgroundColor" Value="#10b981" />
+                                        <Setter Property="TextColor" Value="White" />
+                                        <Setter Property="IsEnabled" Value="True" />
+
+                                        <Style.Triggers>
+                                            <!-- ir izpildits krasa -->
+                                            <DataTrigger TargetType="Button" Binding="{Binding IsCompleted}" Value="True">
+                                                <Setter Property="Text" Value="Šodien pabeigts" />
+                                                <Setter Property="BackgroundColor" Value="LightGray" />
+                                                <Setter Property="TextColor" Value="DarkSlateGray" />
+                                                <Setter Property="IsEnabled" Value="False" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                            </Button>
+
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

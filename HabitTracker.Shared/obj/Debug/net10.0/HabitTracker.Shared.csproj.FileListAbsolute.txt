@@ -1,0 +1,12 @@
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\bin\Debug\net10.0\HabitTracker.Shared.deps.json
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\bin\Debug\net10.0\HabitTracker.Shared.dll
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\bin\Debug\net10.0\HabitTracker.Shared.pdb
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\obj\Debug\net10.0\HabitTracker.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\obj\Debug\net10.0\HabitTracker.Shared.AssemblyInfoInputs.cache
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\obj\Debug\net10.0\HabitTracker.Shared.AssemblyInfo.cs
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\obj\Debug\net10.0\HabitTracker.Shared.csproj.CoreCompileInputs.cache
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\obj\Debug\net10.0\HabitTracker.Shared.dll
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\obj\Debug\net10.0\refint\HabitTracker.Shared.dll
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\obj\Debug\net10.0\HabitTracker.Shared.pdb
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\obj\Debug\net10.0\ref\HabitTracker.Shared.dll
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\obj\Debug\net10.0\HabitTra.D9C5C63C.Up2Date

@@ -1,0 +1,418 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{204EA384-D8BF-4E82-ADC6-3EE351A2EDCD}|HabitTracker.Api\\HabitTracker.Api.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.api\\controllers\\habitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{204EA384-D8BF-4E82-ADC6-3EE351A2EDCD}|HabitTracker.Api\\HabitTracker.Api.csproj|solutionrelative:habittracker.api\\controllers\\habitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.mobile\\apihabitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|solutionrelative:habittracker.mobile\\apihabitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204EA384-D8BF-4E82-ADC6-3EE351A2EDCD}|HabitTracker.Api\\HabitTracker.Api.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.api\\data\\memoryhabitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{204EA384-D8BF-4E82-ADC6-3EE351A2EDCD}|HabitTracker.Api\\HabitTracker.Api.csproj|solutionrelative:habittracker.api\\data\\memoryhabitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204EA384-D8BF-4E82-ADC6-3EE351A2EDCD}|HabitTracker.Api\\HabitTracker.Api.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{204EA384-D8BF-4E82-ADC6-3EE351A2EDCD}|HabitTracker.Api\\HabitTracker.Api.csproj|solutionrelative:habittracker.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204EA384-D8BF-4E82-ADC6-3EE351A2EDCD}|HabitTracker.Api\\HabitTracker.Api.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{204EA384-D8BF-4E82-ADC6-3EE351A2EDCD}|HabitTracker.Api\\HabitTracker.Api.csproj|solutionrelative:habittracker.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.mobile\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|solutionrelative:habittracker.mobile\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.mobile\\edithabitpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|solutionrelative:habittracker.mobile\\edithabitpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.mobile\\edithabitpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|solutionrelative:habittracker.mobile\\edithabitpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.mobile\\addhabitpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|solutionrelative:habittracker.mobile\\addhabitpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.mobile\\addhabitpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|solutionrelative:habittracker.mobile\\addhabitpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.mobile\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|solutionrelative:habittracker.mobile\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{204EA384-D8BF-4E82-ADC6-3EE351A2EDCD}|HabitTracker.Api\\HabitTracker.Api.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.api\\habittracker.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{204EA384-D8BF-4E82-ADC6-3EE351A2EDCD}|HabitTracker.Api\\HabitTracker.Api.csproj|solutionrelative:habittracker.api\\habittracker.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01A8635-7EC9-4AF7-B922-9789D938A56D}|HabitTracker.Domain\\HabitTracker.Domain.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.domain\\repositories\\ihabitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A01A8635-7EC9-4AF7-B922-9789D938A56D}|HabitTracker.Domain\\HabitTracker.Domain.csproj|solutionrelative:habittracker.domain\\repositories\\ihabitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01A8635-7EC9-4AF7-B922-9789D938A56D}|HabitTracker.Domain\\HabitTracker.Domain.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.domain\\habittracker.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A01A8635-7EC9-4AF7-B922-9789D938A56D}|HabitTracker.Domain\\HabitTracker.Domain.csproj|solutionrelative:habittracker.domain\\habittracker.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23AB8B5F-4677-4BF0-A7FA-DAD5E78D5C96}|HabitTracker.Shared\\HabitTracker.Shared.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.shared\\habitrecordshowdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23AB8B5F-4677-4BF0-A7FA-DAD5E78D5C96}|HabitTracker.Shared\\HabitTracker.Shared.csproj|solutionrelative:habittracker.shared\\habitrecordshowdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23AB8B5F-4677-4BF0-A7FA-DAD5E78D5C96}|HabitTracker.Shared\\HabitTracker.Shared.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.shared\\habitshowdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23AB8B5F-4677-4BF0-A7FA-DAD5E78D5C96}|HabitTracker.Shared\\HabitTracker.Shared.csproj|solutionrelative:habittracker.shared\\habitshowdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23AB8B5F-4677-4BF0-A7FA-DAD5E78D5C96}|HabitTracker.Shared\\HabitTracker.Shared.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.shared\\habitupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23AB8B5F-4677-4BF0-A7FA-DAD5E78D5C96}|HabitTracker.Shared\\HabitTracker.Shared.csproj|solutionrelative:habittracker.shared\\habitupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23AB8B5F-4677-4BF0-A7FA-DAD5E78D5C96}|HabitTracker.Shared\\HabitTracker.Shared.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.shared\\habitcreaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23AB8B5F-4677-4BF0-A7FA-DAD5E78D5C96}|HabitTracker.Shared\\HabitTracker.Shared.csproj|solutionrelative:habittracker.shared\\habitcreaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23AB8B5F-4677-4BF0-A7FA-DAD5E78D5C96}|HabitTracker.Shared\\HabitTracker.Shared.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.shared\\habitcompleted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23AB8B5F-4677-4BF0-A7FA-DAD5E78D5C96}|HabitTracker.Shared\\HabitTracker.Shared.csproj|solutionrelative:habittracker.shared\\habitcompleted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.mobile\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|solutionrelative:habittracker.mobile\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.mobile\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|solutionrelative:habittracker.mobile\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.mobile\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|solutionrelative:habittracker.mobile\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01A8635-7EC9-4AF7-B922-9789D938A56D}|HabitTracker.Domain\\HabitTracker.Domain.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.domain\\habit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A01A8635-7EC9-4AF7-B922-9789D938A56D}|HabitTracker.Domain\\HabitTracker.Domain.csproj|solutionrelative:habittracker.domain\\habit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|c:\\users\\gerha\\documents\\csharp_proj\\habittracker\\habittracker.mobile\\services\\habitservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5864F1ED-A90D-4004-A3C1-47691676A10E}|HabitTracker.Mobile\\HabitTracker.Mobile.csproj|solutionrelative:habittracker.mobile\\services\\habitservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HabitsController.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Api\\Controllers\\HabitsController.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Api\\Controllers\\HabitsController.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Api\\Controllers\\HabitsController.cs",
+              "RelativeToolTip": "HabitTracker.Api\\Controllers\\HabitsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T11:00:40.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Api\\Program.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Api\\Program.cs",
+              "RelativeToolTip": "HabitTracker.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T10:55:09.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MemoryHabitRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Api\\Data\\MemoryHabitRepository.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Api\\Data\\MemoryHabitRepository.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Api\\Data\\MemoryHabitRepository.cs",
+              "RelativeToolTip": "HabitTracker.Api\\Data\\MemoryHabitRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAkwCYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T10:51:11.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Api\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Api\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Api\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "HabitTracker.Api\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T10:58:30.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApiHabitService.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\ApiHabitService.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Mobile\\ApiHabitService.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\ApiHabitService.cs",
+              "RelativeToolTip": "HabitTracker.Mobile\\ApiHabitService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T11:25:40.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\MainPage.xaml",
+              "RelativeDocumentMoniker": "HabitTracker.Mobile\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\MainPage.xaml",
+              "RelativeToolTip": "HabitTracker.Mobile\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-10T12:32:27.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditHabitPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\EditHabitPage.xaml.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Mobile\\EditHabitPage.xaml.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\EditHabitPage.xaml.cs",
+              "RelativeToolTip": "HabitTracker.Mobile\\EditHabitPage.xaml.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAswE0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T15:42:03.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditHabitPage.xaml",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\EditHabitPage.xaml",
+              "RelativeDocumentMoniker": "HabitTracker.Mobile\\EditHabitPage.xaml",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\EditHabitPage.xaml",
+              "RelativeToolTip": "HabitTracker.Mobile\\EditHabitPage.xaml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAswBEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-18T15:41:08.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddHabitPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\AddHabitPage.xaml.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Mobile\\AddHabitPage.xaml.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\AddHabitPage.xaml.cs",
+              "RelativeToolTip": "HabitTracker.Mobile\\AddHabitPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T15:13:13.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AddHabitPage.xaml",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\AddHabitPage.xaml",
+              "RelativeDocumentMoniker": "HabitTracker.Mobile\\AddHabitPage.xaml",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\AddHabitPage.xaml",
+              "RelativeToolTip": "HabitTracker.Mobile\\AddHabitPage.xaml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-18T15:12:38.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Mobile\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\MainPage.xaml.cs",
+              "RelativeToolTip": "HabitTracker.Mobile\\MainPage.xaml.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAswAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T12:40:47.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HabitTracker.Api",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Api\\HabitTracker.Api.csproj",
+              "RelativeDocumentMoniker": "HabitTracker.Api\\HabitTracker.Api.csproj",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Api\\HabitTracker.Api.csproj",
+              "RelativeToolTip": "HabitTracker.Api\\HabitTracker.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-06T10:49:12.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IHabitRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Domain\\Repositories\\IHabitRepository.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Domain\\Repositories\\IHabitRepository.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Domain\\Repositories\\IHabitRepository.cs",
+              "RelativeToolTip": "HabitTracker.Domain\\Repositories\\IHabitRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T10:43:39.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HabitTracker.Domain",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Domain\\HabitTracker.Domain.csproj",
+              "RelativeDocumentMoniker": "HabitTracker.Domain\\HabitTracker.Domain.csproj",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Domain\\HabitTracker.Domain.csproj",
+              "RelativeToolTip": "HabitTracker.Domain\\HabitTracker.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-06T10:41:00.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HabitRecordShowData.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Shared\\HabitRecordShowData.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Shared\\HabitRecordShowData.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Shared\\HabitRecordShowData.cs",
+              "RelativeToolTip": "HabitTracker.Shared\\HabitRecordShowData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T09:28:06.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HabitShowData.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Shared\\HabitShowData.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Shared\\HabitShowData.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Shared\\HabitShowData.cs",
+              "RelativeToolTip": "HabitTracker.Shared\\HabitShowData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T09:28:13.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HabitUpdateRequest.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Shared\\HabitUpdateRequest.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Shared\\HabitUpdateRequest.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Shared\\HabitUpdateRequest.cs",
+              "RelativeToolTip": "HabitTracker.Shared\\HabitUpdateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T09:28:16.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HabitCreateRequest.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Shared\\HabitCreateRequest.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Shared\\HabitCreateRequest.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Shared\\HabitCreateRequest.cs",
+              "RelativeToolTip": "HabitTracker.Shared\\HabitCreateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T09:27:58.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HabitCompleted.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Shared\\HabitCompleted.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Shared\\HabitCompleted.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Shared\\HabitCompleted.cs",
+              "RelativeToolTip": "HabitTracker.Shared\\HabitCompleted.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T09:27:34.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Mobile\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\MauiProgram.cs",
+              "RelativeToolTip": "HabitTracker.Mobile\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T12:57:24.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Mobile\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\AppShell.xaml.cs",
+              "RelativeToolTip": "HabitTracker.Mobile\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T08:40:39.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\App.xaml",
+              "RelativeDocumentMoniker": "HabitTracker.Mobile\\App.xaml",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\App.xaml",
+              "RelativeToolTip": "HabitTracker.Mobile\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-19T08:40:33.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Habit.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Domain\\Habit.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Domain\\Habit.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Domain\\Habit.cs",
+              "RelativeToolTip": "HabitTracker.Domain\\Habit.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAA0wEYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T16:04:49.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "HabitServices.cs",
+              "DocumentMoniker": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\Services\\HabitServices.cs",
+              "RelativeDocumentMoniker": "HabitTracker.Mobile\\Services\\HabitServices.cs",
+              "ToolTip": "C:\\Users\\gerha\\Documents\\csharp_proj\\HabitTracker\\HabitTracker.Mobile\\Services\\HabitServices.cs",
+              "RelativeToolTip": "HabitTracker.Mobile\\Services\\HabitServices.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA3wAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T12:23:08.326Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
