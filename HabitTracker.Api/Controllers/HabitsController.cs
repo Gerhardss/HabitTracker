@@ -45,18 +45,23 @@ namespace HabitTracker.Api.Controllers
             return CreatedAtAction(nameof(GetById), new { id = habit.ID }, habit);
         }
 
-        [HttpPut("{id}")] //izlabo
-        public ActionResult UpdateHabit(Guid id, Habit updatedHabit) // labosana
+        [HttpPut("{id}")] // izlabo
+        public ActionResult UpdateHabit(Guid id, Habit updatedHabit)
         {
             var existingHabit = _repository.GetHabitById(id);
             if (existingHabit == null) return NotFound("Ieradums nav atrasts.");
 
-            updatedHabit.ID = id;
-            _repository.UpdateHabit(updatedHabit);
+            existingHabit.Name = updatedHabit.Name;
+            existingHabit.Description = updatedHabit.Description;
+            existingHabit.Schedule = updatedHabit.Schedule;
+            existingHabit.IsArchived = updatedHabit.IsArchived;
+            existingHabit.UpdatedAt = DateTime.Now;
+
+            _repository.UpdateHabit(existingHabit);
 
             return NoContent();
         }
-         
+
         [HttpDelete("{id}")]
         public ActionResult ArchiveHabit(Guid id) // arhivesana
         {
@@ -64,7 +69,7 @@ namespace HabitTracker.Api.Controllers
             if (existingHabit == null) return NotFound("Ieradums nav atrasts.");
 
             _repository.DeleteOrArchiveHabit(id);
-            return NoContent();
+            return NoContent(); 
         }
 
         [HttpPost("{id}/complete")]
@@ -73,7 +78,7 @@ namespace HabitTracker.Api.Controllers
             var habit = _repository.GetHabitById(id);
             if (habit == null) return NotFound("Ieradums nav atrasts.");
 
-            if (habit.IsArchived) return BadRequest("Arhivētu ieradumu nevar atzīmēt kā izpildītu.");
+            if (habit.IsArchived) return BadRequest("Arhivetu ieradumu nevar atzimet kā izpilditu.");
 
             if (!habit.IsCompletedToday())
             {

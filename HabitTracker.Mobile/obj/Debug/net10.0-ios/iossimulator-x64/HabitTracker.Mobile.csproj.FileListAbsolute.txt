@@ -321,3 +321,4 @@ C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Mobile\obj\Debug\
 C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Mobile\bin\Debug\net10.0-ios\iossimulator-x64\Microsoft.Maui.resources.zip
 C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Mobile\obj\Debug\net10.0-ios\iossimulator-x64\mauisplash.outputs
 C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Mobile\obj\Debug\net10.0-ios\iossimulator-x64\mauifont.outputs
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Mobile\obj\Debug\net10.0-ios\iossimulator-x64\HabitTracker.Mobile.sourcelink.json

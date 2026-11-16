@@ -310,3 +310,4 @@ C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Mobile\obj\Debug\
 C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Mobile\bin\Debug\net10.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.resources.zip
 C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Mobile\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauisplash.outputs
 C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Mobile\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\mauifont.outputs
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Mobile\obj\Debug\net10.0-maccatalyst\maccatalyst-x64\HabitTracker.Mobile.sourcelink.json

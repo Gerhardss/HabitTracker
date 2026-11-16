@@ -16,3 +16,4 @@ C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.ConsoleApp\obj\De
 C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.ConsoleApp\obj\Debug\net10.0\HabitTracker.ConsoleApp.pdb
 C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.ConsoleApp\obj\Debug\net10.0\HabitTracker.ConsoleApp.genruntimeconfig.cache
 C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.ConsoleApp\obj\Debug\net10.0\ref\HabitTracker.ConsoleApp.dll
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.ConsoleApp\obj\Debug\net10.0\HabitTracker.ConsoleApp.sourcelink.json

@@ -8,10 +8,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\HabitTracker.Domain\HabitTracker.Domain.csproj" />
+    <ProjectReference Include="..\HabitTracker.Infrastructure\HabitTracker.Infrastructure.csproj" />
     <ProjectReference Include="..\HabitTracker.Shared\HabitTracker.Shared.csproj" />
   </ItemGroup>
 

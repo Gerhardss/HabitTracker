@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System;
 
-namespace HabitTracker.ConsoleApp
+namespace HabitTracker.Domain
 {
     public static class TestDataGenerator
     {

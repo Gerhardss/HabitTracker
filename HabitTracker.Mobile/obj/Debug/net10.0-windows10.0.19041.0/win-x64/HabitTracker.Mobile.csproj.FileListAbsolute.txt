@@ -547,3 +547,4 @@ C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Mobile\obj\Debug\
 C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Mobile\obj\Debug\net10.0-windows10.0.19041.0\win-x64\Microsoft.UI.pri.xml
 C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Mobile\obj\Debug\net10.0-windows10.0.19041.0\win-x64\Microsoft.UI.Xaml.Controls.pri.xml
 C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Mobile\obj\Debug\net10.0-windows10.0.19041.0\win-x64\Microsoft.WindowsAppRuntime.pri.xml
+C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Mobile\obj\Debug\net10.0-windows10.0.19041.0\win-x64\HabitTracker.Mobile.sourcelink.json

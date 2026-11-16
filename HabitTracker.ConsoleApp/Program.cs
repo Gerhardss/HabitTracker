@@ -1,7 +1,6 @@
 ﻿// prieks visiem projektiem tika izmantots c# vadlinijas un dokumentacija no https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/
 // 
 
-using HabitTracker.ConsoleApp;
 using HabitTracker.Domain;
 using System;
 using System.Linq;
