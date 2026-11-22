@@ -1,0 +1,95 @@
+﻿@page "/habits/add"
+@using HabitTracker.Domain
+@using HabitTracker.Web.Services
+@inject WebHabitService HabitService
+@inject NavigationManager Nav
+
+<PageTitle>Jauns ieradums</PageTitle>
+
+<h1>Izveidot jaunu ieradumu</h1>
+
+@if (!string.IsNullOrEmpty(_errorMessage))
+{
+    <div class="alert alert-danger">@_errorMessage</div>
+}
+
+<div class="card mt-3" style="max-width: 600px;">
+    <div class="card-body">
+        <div class="mb-3">
+            <label class="form-label">Nosaukums max 50 simboli</label>
+            <input type="text" class="form-control" maxlength="50" @bind="_name" placeholder="Piem., Lasīt grāmatu 20 min" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Apraksts max 250 simboli</label>
+            <textarea class="form-control" rows="3" maxlength="250" @bind="_description" placeholder="Papildu piezīmes par ieradumu..."></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Grafiks / biežums</label>
+            <select class="form-select" @bind="_schedule">
+                <option value="Katru dienu">Katru dienu</option>
+                <option value="3 reizes nedēļā">3 reizes nedēļā</option>
+                <option value="Reizi nedēļā">Reizi nedēļā</option>
+                <option value="Darba dienās">Darba dienās</option>
+            </select>
+        </div>
+
+        <div class="d-flex gap-2">
+            <button class="btn btn-primary" @onclick="SaveHabitAsync" disabled="@_isSaving">
+                @(_isSaving ? "Saglabā" : "Saglabāt ieradumu")
+            </button>
+            <a href="/" class="btn btn-outline-secondary">Atcelt</a>
+        </div>
+    </div>
+</div>
+
+@code { // pazinojumu logika
+    private string _name = string.Empty;
+    private string _description = string.Empty;
+    private string _schedule = "Katru dienu";
+    private bool _isSaving = false;
+    private string? _errorMessage;
+
+    private async Task SaveHabitAsync()
+    {
+        if (string.IsNullOrWhiteSpace(_name))
+        {
+            _errorMessage = "Lūdzu, ievadi ieraduma nosaukumu!";
+            return;
+        }
+
+        _isSaving = true;
+        _errorMessage = null;
+
+        try
+        {
+            var newHabit = new Habit  // pieskir jaunas vertibas sajos laukos
+            {
+                ID = Guid.NewGuid(),
+                UserID = "default-user",
+                Name = _name.Trim(),
+                Description = _description?.Trim() ?? string.Empty,
+                Schedule = _schedule,
+                CreatedAt = DateTime.Now,
+                UpdatedAt = DateTime.Now,
+                IsArchived = false
+            };
+
+            await HabitService.AddHabitAsync(newHabit);
+            Nav.NavigateTo("/");
+        }
+        catch (ArgumentException ex)
+        {
+            _errorMessage = ex.Message;
+        }
+        catch (Exception)
+        {
+            _errorMessage = "Neizdevās saglabāt ieradumu. Pārbaudi, vai API serveris darbojas.";
+        }
+        finally
+        {
+            _isSaving = false;
+        }
+    }
+}

@@ -1,0 +1,132 @@
+﻿@page "/habits/{Id:guid}"
+@using HabitTracker.Domain
+@using HabitTracker.Web.Services
+@inject WebHabitService HabitService
+
+<PageTitle>Ieraduma detaļas</PageTitle>
+
+<div class="mb-3">
+    <a href="/" class="btn btn-outline-secondary btn-sm">&larr; Atpakaļ uz sarakstu</a>
+</div>
+
+@if (!string.IsNullOrEmpty(_successMessage))
+{
+    <div class="alert alert-success">@_successMessage</div>
+}
+
+@if (!string.IsNullOrEmpty(_errorMessage))
+{
+    <div class="alert alert-danger">@_errorMessage</div>
+}
+
+@if (_isLoading)
+{
+    <div class="d-flex align-items-center my-4">
+        <div class="spinner-border text-primary me-2" role="status"></div>
+        <span>Ielādē ieraduma detaļas</span>
+    </div>
+}
+else if (_habit != null)
+{
+    <div class="card" style="max-width: 700px;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h3 class="mb-0">@_habit.Name</h3>
+            @if (_habit.IsCompleted)
+            {
+                <span class="badge bg-success">Šodien izpildīts</span>
+            }
+            else
+            {
+                <span class="badge bg-warning text-dark">Šodien nav izpildīts</span>
+            }
+        </div>
+        <div class="card-body">
+            <p><strong>Apraksts:</strong> @(string.IsNullOrWhiteSpace(_habit.Description) ? "Nav norādīts" : _habit.Description)</p>
+            <p><strong>Grafiks:</strong> @_habit.Schedule</p>
+            <p><strong>Izveidots:</strong> @_habit.CreatedAt.ToString("dd.MM.yyyy HH:mm")</p>
+            <p><strong>Pēdējās izmaiņas:</strong> @(_habit.UpdatedAt?.ToString("dd.MM.yyyy HH:mm") ?? "-")</p>
+            <p><strong>Kopā izpildīts:</strong> @(_habit.Record?.Count ?? 0) reizes</p>
+
+            <div class="d-flex gap-2 mt-3">
+                <button class="btn btn-success" disabled="@_habit.IsCompleted" @onclick="CompleteHabitAsync">
+                    @(_habit.IsCompleted ? "Jau izpildīts šodien" : "Atzīmēt kā izpildītu šodien")
+                </button>
+                <a href="/habits/edit/@_habit.ID" class="btn btn-outline-primary">Labot ieradumu</a>
+            </div>
+
+            <hr class="my-4" />
+
+            <h5>Izpildes vēsture</h5>
+            @if (_habit.Record == null || _habit.Record.Count == 0)
+            {
+                <p class="text-muted">Šis ieradums vēl nav ne reizi izpildīts.</p>
+            }
+            else
+            {
+                <ul class="list-group">
+                    @foreach (var record in _habit.Record.OrderByDescending(r => r.CompletionDate))
+                    {
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>Izpildīts</span>
+                            <span class="badge bg-primary rounded-pill">@record.CompletionDate.ToString("dd.MM.yyyy")</span>
+                        </li>
+                    }
+                </ul>
+            }
+        </div>
+    </div>
+}
+
+@code { // pazinojumu logika
+    [Parameter]
+    public Guid Id { get; set; }
+
+    private Habit? _habit;
+    private bool _isLoading = true;
+    private string? _errorMessage;
+    private string? _successMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadHabitAsync();
+    }
+
+    private async Task LoadHabitAsync()
+    {
+        _isLoading = true;
+        _errorMessage = null;
+
+        try
+        {
+            _habit = await HabitService.GetHabitByIdAsync(Id);
+            if (_habit == null)
+            {
+                _errorMessage = "Ieradums netika atrasts.";
+            }
+        }
+        catch (Exception)
+        {
+            _errorMessage = "Neizdevās ielādēt ieraduma detaļas. Pārbaudi, vai API darbojas.";
+        }
+        finally
+        {
+            _isLoading = false;
+        }
+    }
+
+    private async Task CompleteHabitAsync()
+    {
+        if (_habit == null) return;
+
+        try
+        {
+            await HabitService.CompleteHabitAsync(_habit.ID);
+            _successMessage = "Ieradums atzīmēts kā izpildīts šodien!";
+            await LoadHabitAsync();
+        }
+        catch (Exception)
+        {
+            _errorMessage = "Kļūda, atzīmējot izpildi.";
+        }
+    }
+}

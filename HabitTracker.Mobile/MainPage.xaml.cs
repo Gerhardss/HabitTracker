@@ -17,7 +17,11 @@ namespace HabitTracker.Mobile
         protected override async void OnAppearing()
         {
             base.OnAppearing();
+            await LoadHabitsAsync();
+        }
 
+        private async Task LoadHabitsAsync()
+        {
             var allHabits = await _habitService.GetHabitsAsync();
 
             if (allHabits == null)
@@ -29,6 +33,37 @@ namespace HabitTracker.Mobile
             var habits = allHabits.Where(h => !h.IsArchived).ToList(); // ielade nearhivetus ieradumus
             HabitsList.ItemsSource = null;
             HabitsList.ItemsSource = habits;
+
+            int completedToday = habits.Count(h => h.IsCompleted);
+            TodayProgressLabel.Text = $"Šodien izpildīti: {completedToday} no {habits.Count}";
+        }
+
+        private async void OnRefreshClicked(object sender, EventArgs e)
+        {
+            RefreshButton.IsEnabled = false;
+            RefreshButton.Text = "Ielādē...";
+
+            try
+            {
+                await LoadHabitsAsync();
+            }
+            finally
+            {
+                RefreshButton.Text = "↻ Atjaunot";
+                RefreshButton.IsEnabled = true;
+            }
+        }
+
+        private async void OnRefreshing(object sender, EventArgs e)
+        {
+            try
+            {
+                await LoadHabitsAsync();
+            }
+            finally
+            {
+                HabitsRefreshView.IsRefreshing = false;
+            }
         }
 
         private async void OnCompleteButtonClicked(object sender, EventArgs e)
@@ -55,7 +90,7 @@ namespace HabitTracker.Mobile
 
                         // no 48 lidz 60 rindinai ir gemini kods
                         // man bija await DisplayAlert bet visu laiku meta error
-                        OnAppearing();
+                        await LoadHabitsAsync();
 
                         await Application.Current.MainPage.DisplayAlert("Gatavs!", "Ieradums veiksmigi atzimets ka izpildits.", "Labi");
                     }
@@ -85,9 +120,9 @@ namespace HabitTracker.Mobile
         private async void OnHabitTapped(object sender, TappedEventArgs e)
         { // gemini ieteica so izmantot, jo uz android nevareja atvert ieraduma apskati un redigesanas logu
 
-            var frame = sender as Frame;
+            var element = sender as VisualElement;
 
-            if (frame?.BindingContext is HabitTracker.Domain.Habit selectedHabit)
+            if (element?.BindingContext is HabitTracker.Domain.Habit selectedHabit)
             {
                 await Navigation.PushModalAsync(new EditHabitPage(selectedHabit));
             }

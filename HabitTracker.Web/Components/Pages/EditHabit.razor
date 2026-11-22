@@ -1,0 +1,131 @@
+﻿@page "/habits/edit/{Id:guid}"
+@using HabitTracker.Domain
+@using HabitTracker.Web.Services
+@inject WebHabitService HabitService
+@inject NavigationManager Nav
+
+<PageTitle>Labot ieradumu</PageTitle>
+
+<h1>Labot ieradumu</h1>
+
+@if (!string.IsNullOrEmpty(_errorMessage))
+{
+    <div class="alert alert-danger">@_errorMessage</div>
+}
+
+@if (_isLoading)
+{
+    <div class="d-flex align-items-center my-4">
+        <div class="spinner-border text-primary me-2" role="status"></div>
+        <span>Ielādē datus</span>
+    </div>
+}
+else if (_habit != null)
+{
+    <div class="card mt-3" style="max-width: 600px;">
+        <div class="card-body">
+            <div class="mb-3">
+                <label class="form-label">Nosaukums max 50 simboli</label>
+                <input type="text" class="form-control" maxlength="50" @bind="_name" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Apraksts max 250 simboli</label>
+                <textarea class="form-control" rows="3" maxlength="250" @bind="_description"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Grafiks / biežums</label>
+                <select class="form-select" @bind="_schedule">
+                    <option value="Katru dienu">Katru dienu</option>
+                    <option value="3 reizes nedēļā">3 reizes nedēļā</option>
+                    <option value="Reizi nedēļā">Reizi nedēļā</option>
+                    <option value="Darba dienās">Darba dienās</option>
+                </select>
+            </div>
+
+            <div class="d-flex gap-2">
+                <button class="btn btn-primary" @onclick="UpdateHabitAsync" disabled="@_isSaving">
+                    @(_isSaving ? "Saglabā..." : "Saglabāt izmaiņas")
+                </button>
+                <a href="/" class="btn btn-outline-secondary">Atcelt</a>
+            </div>
+        </div>
+    </div>
+}
+
+@code { // ladesanas un pazinojumu logika
+    [Parameter]
+    public Guid Id { get; set; }
+
+    private Habit? _habit;
+    private string _name = string.Empty;
+    private string _description = string.Empty;
+    private string _schedule = "Katru dienu";
+    private bool _isLoading = true;
+    private bool _isSaving = false;
+    private string? _errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _habit = await HabitService.GetHabitByIdAsync(Id);
+            if (_habit == null)
+            {
+                _errorMessage = "Ieradums netika atrasts.";
+            }
+            else
+            {
+                _name = _habit.Name;
+                _description = _habit.Description ?? string.Empty;
+                _schedule = string.IsNullOrWhiteSpace(_habit.Schedule) ? "Katru dienu" : _habit.Schedule;
+            }
+        }
+        catch (Exception)
+        {
+            _errorMessage = "API nav sasniedzams. Neizdevās ielādēt ieradumu.";
+        }
+        finally
+        {
+            _isLoading = false;
+        }
+    }
+
+    private async Task UpdateHabitAsync()
+    {
+        if (_habit == null) return;
+
+        if (string.IsNullOrWhiteSpace(_name))
+        {
+            _errorMessage = "Nosaukums nedrīkst būt tukšs!";
+            return;
+        }
+
+        _isSaving = true;
+        _errorMessage = null;
+
+        try
+        {
+            _habit.Name = _name.Trim();
+            _habit.Description = _description?.Trim() ?? string.Empty;
+            _habit.Schedule = _schedule;
+            _habit.UpdatedAt = DateTime.Now;
+
+            await HabitService.UpdateHabitAsync(_habit);
+            Nav.NavigateTo("/");
+        }
+        catch (ArgumentException ex)
+        {
+            _errorMessage = ex.Message;
+        }
+        catch (Exception)
+        {
+            _errorMessage = "Neizdevās saglabāt izmaiņas. Pārbaudi savienojumu ar API.";
+        }
+        finally
+        {
+            _isSaving = false;
+        }
+    }
+}

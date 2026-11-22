@@ -9,5 +9,4 @@ C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\obj\Debug\
 C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\obj\Debug\net10.0\refint\HabitTracker.Shared.dll
 C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\obj\Debug\net10.0\HabitTracker.Shared.pdb
 C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\obj\Debug\net10.0\ref\HabitTracker.Shared.dll
-C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\obj\Debug\net10.0\HabitTra.D9C5C63C.Up2Date
 C:\Users\gerha\Documents\csharp_proj\HabitTracker\HabitTracker.Shared\obj\Debug\net10.0\HabitTracker.Shared.sourcelink.json

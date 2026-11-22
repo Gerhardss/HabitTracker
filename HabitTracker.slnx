@@ -8,4 +8,5 @@
   <Project Path="HabitTracker.Infrastructure/HabitTracker.Infrastructure.csproj" Id="ff4e3bfb-be74-47bd-bb08-b2d27dbd83de" />
   <Project Path="HabitTracker.Mobile/HabitTracker.Mobile.csproj" Id="5864f1ed-a90d-4004-a3c1-47691676a10e" />
   <Project Path="HabitTracker.Shared/HabitTracker.Shared.csproj" Id="23ab8b5f-4677-4bf0-a7fa-dad5e78d5c96" />
+  <Project Path="HabitTracker.Web/HabitTracker.Web.csproj" Id="b5109059-94ad-4be7-8b37-1b1d5a91031f" />
 </Solution>
