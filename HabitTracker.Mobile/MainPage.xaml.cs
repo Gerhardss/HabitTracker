@@ -22,26 +22,25 @@ namespace HabitTracker.Mobile
 
         private async Task LoadHabitsAsync()
         {
+            int pendingBefore = _habitService.PendingActionsCount; // skaits cik izmainas offline rezima
             var allHabits = await _habitService.GetHabitsAsync();
-
-            if (allHabits == null)
-            {
-                await DisplayAlert("Kļūda", "API nav sasniedzams no mobilās lietotnes.", "Labi");
-                return;
-            }
 
             var habits = allHabits.Where(h => !h.IsArchived).ToList(); // ielade nearhivetus ieradumus
             HabitsList.ItemsSource = null;
             HabitsList.ItemsSource = habits;
 
             int completedToday = habits.Count(h => h.IsCompleted);
-            TodayProgressLabel.Text = $"Šodien izpildīti: {completedToday} no {habits.Count}";
+            string modeText = _habitService.IsOffline
+                ? $" (Offline režīms  Izmaiņas offline režīmā: {_habitService.PendingActionsCount})"
+                : (pendingBefore > 0 ? $" (Sinhronizētas {pendingBefore} izmaiņas!)" : "");
+
+            TodayProgressLabel.Text = $"Šodien izpildīti: {completedToday} no {habits.Count}{modeText}";
         }
 
         private async void OnRefreshClicked(object sender, EventArgs e)
         {
             RefreshButton.IsEnabled = false;
-            RefreshButton.Text = "Ielādē...";
+            RefreshButton.Text = "Ielādē";
 
             try
             {
@@ -49,7 +48,7 @@ namespace HabitTracker.Mobile
             }
             finally
             {
-                RefreshButton.Text = "↻ Atjaunot";
+                RefreshButton.Text = "Atjaunināt";
                 RefreshButton.IsEnabled = true;
             }
         }
@@ -92,7 +91,7 @@ namespace HabitTracker.Mobile
                         // man bija await DisplayAlert bet visu laiku meta error
                         await LoadHabitsAsync();
 
-                        await Application.Current.MainPage.DisplayAlert("Gatavs!", "Ieradums veiksmigi atzimets ka izpildits.", "Labi");
+                        await Application.Current.MainPage.DisplayAlert("Gatavs!", "Ieradums veiksmIgi atzīmēts kā izpildīts.", "Labi");
                     }
                 }
                 else

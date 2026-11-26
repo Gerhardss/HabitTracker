@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HabitTracker.Mobile")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+dd68361cc9f9d4ffa9217fed36458e5738c853b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f3eade4d647b1e49d021c6d43b2729bdf309e995")]
 [assembly: System.Reflection.AssemblyProductAttribute("HabitTracker.Mobile")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HabitTracker.Mobile")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

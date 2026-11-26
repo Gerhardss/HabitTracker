@@ -1,4 +1,4 @@
-<api type="debug" assembly-name="HabitTracker.Mobile" mvid="c1b81a051a284633aa96bbff0b7ef2b2">
+<api type="debug" assembly-name="HabitTracker.Mobile" mvid="5a76230b20bc4044b8fc12416cf637a9">
   <java-to-managed>
     <entry java-name="crc647369b8ccb21cbefb/MainActivity" managed-name="HabitTracker.Mobile.MainActivity, HabitTracker.Mobile" managed-type-token-id="33554444" />
     <entry java-name="crc647369b8ccb21cbefb/MainApplication" managed-name="HabitTracker.Mobile.MainApplication, HabitTracker.Mobile" managed-type-token-id="33554445" />
